@@ -9,8 +9,8 @@ current_player = "X"
 
 while True:
     display_matrix(board)
-    row = int(input(f"Игрок {current_player}, введите номер строки (0-2): "))
-    col = int(input(f"Игрок {current_player}, введите номер столбца (0-2): "))
+    row = int(input(f"Игрок {current_player}, введите номер строки (1-3): "))-1
+    col = int(input(f"Игрок {current_player}, введите номер столбца (1-3): "))-1
 
     if board[row][col] == " ":
         board[row][col] = current_player
